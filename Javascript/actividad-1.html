@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> Actividad 1 </title>
+        <script>
+            var a
+            var b
+            var c
+            a= parseInt (prompt("Introducir 1er Numero"));
+            b= parseInt (prompt("Introducir 2do Numero"));
+            c= parseInt (prompt("Introducir 3er Numero"));
+            if(a > b){
+                if(a > c){
+                    alert("el numero mayor es el primero: "+a);
+                    if(b > c){
+                        alert(" y el numero menor es el tercero: "+c);
+                    }else{
+                        alert(" y el numero menor es el segundo: "+b);
+                    };
+                }else{
+                    alert("el numero mayor es el tercero: "+c);
+                    alert(" y el numero menor es el segundo: "+b);
+                };
+            }else{
+                if(b > c){
+                    alert("el numero mayor es el segundo: "+b);
+                    if(a > c){
+                        alert(" y el numero menor es el tercero: "+c);
+                    }else{
+                        alert(" y el numero menor es el primero: "+a);
+                    };
+                }else{
+                    alert("el numero mayor es el tercero: "+c);
+                    if(a > b){
+                        alert(" y el numero menor es el segundo: "+b);
+                    }else{
+                        alert(" y el numero menor es el primero: "+a);
+                    };
+                };
+            };
+        </script>
+    </head>
+</html>
